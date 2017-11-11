@@ -12,7 +12,7 @@ public class HarmonicCost extends Stopwatch {
 
     public static void main (String[]args)
     {
-        Stopwatch forStop = new Stopwatch();
+        Stopwatch loopStop = new Stopwatch();
         int n = Integer.parseInt(args[0]); //args = 13,000
         double sum = 0.0;
         for (int i = 1; i <= n; i++)
@@ -20,11 +20,10 @@ public class HarmonicCost extends Stopwatch {
             sum += 1.0/i;
         }
         System.out.println(sum);
-        forStop.stop();
-
-        Stopwatch recStop = new Stopwatch();
+        loopStop.stop();
+        loopStop.restart();
         System.out.println(harmonic(Integer.parseInt(args[0])));
-        recStop.stop();
+        loopStop.stop();
     }
 
 }
