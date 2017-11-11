@@ -14,6 +14,7 @@ public class HarmonicCost extends Stopwatch {
     {
         Stopwatch loopStop = new Stopwatch();
         int n = Integer.parseInt(args[0]); //args = 13,000
+        //compare for-loop method to recursive method in terms of processing speed
         double sum = 0.0;
         for (int i = 1; i <= n; i++)
         {  // Add the ith term to the sum.
